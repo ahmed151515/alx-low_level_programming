@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main funcsion - print "\Programming is like building a multilingual puzzle"
+ * main - print "\Programming is like building a multilingual puzzle"
  * Description: This is a longer description.
  * this code to solve proplom done
  * i use puts functios
