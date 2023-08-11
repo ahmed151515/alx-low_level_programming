@@ -11,7 +11,7 @@ int main(void)
 
 	for (i = 0; i < 26; i++)
 	{
-		if (tmp == 'e' || tmp == 'p')
+		if (tmp == 'e' || tmp == 'q')
 		{
 			tmp++;
 			continue;
