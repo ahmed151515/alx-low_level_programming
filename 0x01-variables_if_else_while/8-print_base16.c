@@ -17,7 +17,6 @@ int main(void)
 		{
 			tmp += 39;
 		}
-		
 	}
 	putchar('\n');
 	return (0);
