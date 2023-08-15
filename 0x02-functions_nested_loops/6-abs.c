@@ -1,6 +1,5 @@
-#include "_putchar.c"
+#include "main.h"
 int _abs(int);
-#include <stdio.h>
 
 /**
  * main - check the code

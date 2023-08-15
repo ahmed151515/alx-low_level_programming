@@ -1,4 +1,4 @@
-#include "_putchar.c"
+#include "main.h"
 void times_table(void);
 /**
  * main - check the code

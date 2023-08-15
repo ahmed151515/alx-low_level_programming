@@ -1,5 +1,4 @@
-#include "_putchar.c"
-#include <stdio.h>
+#include "main.h"
 int add(int, int);
 /**
  * main - check the code

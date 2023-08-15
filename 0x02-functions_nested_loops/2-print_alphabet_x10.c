@@ -1,4 +1,4 @@
-#include "_putchar.c"
+#include "main.h"
 void print_alphabet_x10(void);
 /**
  * main - entry funtion
