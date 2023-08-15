@@ -17,7 +17,6 @@ void times_table(void)
 				{
 					_putchar(',');
 					_putchar(' ');
-					_putchar(' ');
 				}
 			}
 			else
@@ -32,6 +31,10 @@ void times_table(void)
 				}
 			}
 			tmp += i;
+			if (tmp < 10)
+			{
+					_putchar(' ');
+			}
 		}
 		tmp = 0;
 		_putchar('\n');
