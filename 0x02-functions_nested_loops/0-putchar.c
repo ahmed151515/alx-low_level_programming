@@ -1,5 +1,7 @@
 #include "_putchar.c"
 
+#include "main.c"
+
 /**
  * main - entry funtion
  * Description: main have all code
