@@ -1,15 +1,4 @@
 #include "main.h"
-void print_alphabet(void);
-/**
- * main - entry funtion
- * Description: main have all code
- * Return: 0
- */
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
 /**
  * print_alphabet - print a to z
  * Description: print [a..z]
