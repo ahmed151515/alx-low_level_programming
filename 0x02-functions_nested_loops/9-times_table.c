@@ -31,7 +31,7 @@ void times_table(void)
 				}
 			}
 			tmp += i;
-			if (tmp < 10)
+			if (tmp < 10 && j < 9)
 			{
 					_putchar(' ');
 			}
