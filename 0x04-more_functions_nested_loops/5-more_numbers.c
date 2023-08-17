@@ -2,7 +2,7 @@
 /**
  * print_numbers - (print from 0 to 14) * 10
  */
-void print_numbers(void)
+void more_numbers(void)
 {
 	int i, j;
 
