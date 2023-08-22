@@ -9,7 +9,7 @@ void print_array(int *a, int n)
 {
 	if (n > 1)
 	{
-		return ();
+		return;
 	}
 	int i;
 
