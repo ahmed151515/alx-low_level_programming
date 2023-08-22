@@ -7,10 +7,8 @@
  */
 void print_array(int *a, int n)
 {
-	if (n < 1)
+	if (n > 0)
 	{
-		return NULL;
-	}
 	int i;
 
 	for (i = 0; i < n - 1; i++)
@@ -18,4 +16,5 @@ void print_array(int *a, int n)
 		printf("%d, ", a[i]);
 	}
 	printf("%d\n", a[n - 1]);
+	}
 }
