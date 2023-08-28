@@ -15,7 +15,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	{
 		if (i > 9)
 		{
-			dest[i] = hex[i % 10];
+			dest[i] = hex[src[i] % 10];
 			continue;
 		}
 		dest[i] = src[i];
