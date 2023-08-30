@@ -5,7 +5,7 @@
  * @ count: int
  * Retunr: int
  */
-int tmp(char *s, int count = 0)
+int tmp(char *s, int count)
 {
 	if (*s == '\0')
 	{
@@ -20,5 +20,5 @@ int tmp(char *s, int count = 0)
  */
 int _strlen_recursion(char *s)
 {
-	return (tmp(s));
+	return (tmp(s, 0));
 }
