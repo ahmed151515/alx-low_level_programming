@@ -15,7 +15,7 @@ int tmp(int n, int n2)
 	{
 		return (-1);
 	}
-	tmp(n + 1, n2);
+	return (tmp(n, n + 1));
 }
 /**
  * _sqrt_recursion -_sqrt_recursion
