@@ -2,8 +2,8 @@
 /**
  * tmp - tmp
  * @s: string
- * @ count: int
- * Retunr: int
+ * @count: int
+ * Return: int
  */
 int tmp(char *s, int count)
 {
