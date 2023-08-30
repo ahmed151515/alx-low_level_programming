@@ -24,6 +24,7 @@ void tmp(char *s, int i)
 	if (*s == '\0')
 	{
 		print_rev(s - 1, i - 1);
+		return;
 	}
 	tmp(s + 1, i + 1);
 }
