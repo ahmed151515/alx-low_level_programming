@@ -34,5 +34,9 @@ void tmp(char *s, int i)
  */
 void _print_rev_recursion(char *s)
 {
+	if (s == "")
+	{
+		_putchar('\n');
+	}
 	tmp(s, 0);
 }
