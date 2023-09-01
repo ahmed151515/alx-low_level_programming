@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 		if (n >= num[i])
 		{
 			res += n / num[i];
-			n -= res * num[i];
+			n %= num[i];
 			if (n == 0)
 			{
 				break;
