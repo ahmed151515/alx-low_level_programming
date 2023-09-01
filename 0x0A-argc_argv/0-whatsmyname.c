@@ -2,7 +2,8 @@
 /**
  * main - main
  * @argv: araay
- * Retrun: int
+ * @argc: int
+ * Return: int
  */
 int main(int argc, char *argv[])
 {
