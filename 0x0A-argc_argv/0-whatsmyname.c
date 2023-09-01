@@ -4,8 +4,11 @@
  * @argv: araay
  * Retrun: int
  */
-int main(char *argv[])
+int main(int argc, char *argv[])
 {
+	int tmp = argc;
+	(void)tmp;
+
 	printf("%s\n", *argv);
 	return (0);
 }
