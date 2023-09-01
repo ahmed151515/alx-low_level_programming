@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 	int res = 0, i, n;
 
 	n = atoi(argv[1]);
-	if (argc == < 2)
+	if (argc < 2)
 	{
 		printf("Error\n");
 		return (1);
