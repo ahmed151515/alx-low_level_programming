@@ -11,15 +11,10 @@ int main(int argc, char *argv[])
 	int res = 0, i, n;
 
 	n = atoi(argv[1]);
-	if (argc == 1)
+	if (argc == < 2)
 	{
 		printf("Error\n");
 		return (1);
-	}
-	if (argc < 0)
-	{
-		printf("0\n");
-		return (0);
 	}
 	for (i = 0; i < 5; i++)
 	{
@@ -27,7 +22,7 @@ int main(int argc, char *argv[])
 		{
 			res += n / num[i];
 			n %= num[i];
-			if (n == 0)
+			if (n < 0)
 			{
 				break;
 			}
