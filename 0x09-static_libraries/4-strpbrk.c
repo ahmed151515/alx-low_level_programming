@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * strpbrk - strpbrk
+ * _strpbrk - strpbrk
  * @s: string
  * @accept: string
  * Return: srting
