@@ -7,16 +7,12 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	if (size == 0)
-	{
-		return (NULL);
-	}
 	char *res = (char *)malloc(sizeof(c) * size);
 	unsigned int i;
 
-	if (res == NULL)
+	if (res == NULL || size == 0)
 	{
-		return (res);
+		return (NULL);
 	}
 
 	for (i = 0; i < size; i++)
