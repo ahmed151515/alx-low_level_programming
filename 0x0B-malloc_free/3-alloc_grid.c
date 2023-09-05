@@ -1,30 +1,37 @@
 #include "main.h"
 /**
  * alloc_grid - alloc_grid
- * width: int
- * height: int
+ * @width: int
+ * @height: int
  * Return: array
  */
 int **alloc_grid(int width, int height)
 {
-	int *tmp, **res, i;
+	int **res, i, j;
 
 	if (width <= 0 || height <= 0)
 	{
 		return (NULL);
 	}
 
-	tmp = (int *)malloc(sizeof(int) * (width * height));
+	res = (int **)malloc(sizeof(int *) * height);
 
-	if (tmp == NULL)
+	if (res == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < width * height; i++)
+	for (i = 0; i < height; i++)
 	{
-		tmp[i] = 0;
+		res[i] = (int *)malloc(sizeof(int) * width);
+		if (res[i] == NULL)
+		{
+			return (NULL);
+		}
+		for (j = 0; j < width; j++)
+		{
+			res[i][j] = 0;
+		}
 	}
 
-	res = &tmp;
 	return (res);
 }
