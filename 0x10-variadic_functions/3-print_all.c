@@ -20,7 +20,7 @@ int chack(char tmp)
 }
 /**
  * print_all - print_all
- * format: string
+ * @format: string
  */
 void print_all(const char * const format, ...)
 {
@@ -37,8 +37,8 @@ void print_all(const char * const format, ...)
 				printf("%d", va_arg(arg, int));
 				break;
 			case 'c':
-				 printf("%c", va_arg(arg, int));
-				 break;
+				printf("%c", va_arg(arg, int));
+				break;
 			case 's':
 				tmp = va_arg(arg, char *);
 				switch ((int)(!tmp))
