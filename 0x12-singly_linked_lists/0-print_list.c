@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
- * print_list - print_list
- * @h: lnkedlist
- * Return: size_t
+ * print_list - print all node
+ * @h: first node
+ * Return: num of node
  */
 size_t print_list(const list_t *h)
 {
@@ -16,7 +16,7 @@ size_t print_list(const list_t *h)
 			printf("[0] (nill)\n");
 			continue;
 		}
-		printf("[%u] %s\n", h->len, h->str);
+		printf("[%d] %s\n", h->len, h->str);
 	}
 	return (count);
 }
