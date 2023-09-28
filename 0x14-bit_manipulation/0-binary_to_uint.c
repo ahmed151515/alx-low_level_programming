@@ -1,24 +1,5 @@
 #include "main.h"
 /**
- * pow - pow 2
- * @n: int
- * Return: int
- */
-int _pow(int n)
-{
-	int num = 1;
-
-	if (n == 0)
-	{
-		return (1);
-	}
-	while (n--)
-	{
-		num *= 2;
-	}
-	return (num);
-}
-/**
  * binary_to_uint - binary_to_uint
  * @b: 0 1
  * Return: int
@@ -26,7 +7,6 @@ int _pow(int n)
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int num = 0;
-	int len = sizeof(b) - 1;
 
 	if (b == NULL)
 	{
@@ -39,7 +19,7 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		}
 
-		num += (*b - '0') * (_pow(len));
+		num += (*b - '0') * (num * 2);
 		b++;
 	}
 	return (num);
