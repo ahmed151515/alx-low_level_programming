@@ -3,7 +3,7 @@
  * read_textfile - read_textfile
  * @filename: fgdfg
  * @letters: gfhgfh
- * Return: int 
+ * Return: int
  */
 size_t read_textfile(const char *filename, size_t letters)
 {
@@ -18,7 +18,7 @@ size_t read_textfile(const char *filename, size_t letters)
 	f = fopen(filename, "r");
 	if (f == NULL)
 	{
-		return 0;
+		return (0);
 	}
 
 	while (letters-- && c)
