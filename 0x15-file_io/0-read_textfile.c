@@ -23,5 +23,6 @@ size_t read_textfile(const char *filename, size_t letters)
 
 	count = read(f, s, letters);
 	write(1,c,count);
+	close(f);
 	return (count);
 }
