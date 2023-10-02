@@ -21,6 +21,10 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	}
 	if (text_content == NULL)
+	{
+		close(f);
+		return (1);
+	}
 	test = write(f, text_content, sizeof(text_content) - 1);
 	if (test == -1)
 	{
