@@ -23,13 +23,7 @@ size_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	read(f, c, letters);
-	while (*c != '\0')
-	{
-		_putchar(*c);
-		c++;
-		count++;
-	}
-
+	count = read(f, c, letters);
+	write(1,c,count);
 	return (count);
 }
