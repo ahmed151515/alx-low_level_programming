@@ -9,9 +9,9 @@ size_t read_textfile(const char *filename, size_t letters)
 {
 	size_t count = 0;
 	int f;
-	char *s = malloc(letters);
+	char s[1024 * 8];
 
-	if (filename == NULL || c == NULL)
+	if (filename == NULL)
 	{
 		return (0);
 	}
@@ -21,8 +21,8 @@ size_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	count = read(f, s, letters);
-	write(1,c,count);
+	count = read(f, &s[0], letters);
+	write(1,&s[0],count);
 	close(f);
 	return (count);
 }
