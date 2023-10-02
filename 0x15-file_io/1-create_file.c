@@ -1,5 +1,21 @@
 #include "main.h"
 /**
+ * size_stirng - size_stirn
+ * @s: stirng
+ * Return: int
+ */
+int size_stirng(char *s)
+{
+	int size = 0;
+
+	while (*s != '\0')
+	{
+		size++;
+		s++;
+	}
+	return (size);
+}
+/**
  * create_file - create_file
  * @filename: same
  * @text_content: same
@@ -25,11 +41,11 @@ int create_file(const char *filename, char *text_content)
 		close(f);
 		return (1);
 	}
-	test = write(f, text_content, sizeof(text_content) - 1);
+	test = write(f, text_content, size_stirng(text_content));
 	if (test == -1)
 	{
 		return (-1);
 	}
 	close(f);
-	return (test == sizeof(text_content) - 1 ? 1 : -1);
+	return (1);
 }
