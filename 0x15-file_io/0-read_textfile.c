@@ -5,9 +5,9 @@
  * @letters: gfhgfh
  * Return: int
  */
-size_t read_textfile(const char *filename, size_t letters)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
-	size_t count = 0;
+	ssize_t count = 0;
 	int f;
 	char s[1024 * 8];
 
