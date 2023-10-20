@@ -2,7 +2,7 @@
 
 /**
  * get_endianness - get_endianness
- * Rerurn: 1 or 0
+ * Return: 1 or 0
  */
 int get_endianness(void)
 {
