@@ -8,6 +8,10 @@ int size_stirng(char *s)
 {
 	int size = 0;
 
+	if (s == NULL)
+	{
+		return (0);
+	}
 	while (*s != '\0')
 	{
 		size++;
