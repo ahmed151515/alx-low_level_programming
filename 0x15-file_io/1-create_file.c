@@ -7,6 +7,10 @@
 int size_stirng(char *s)
 {
 	int size = 0;
+	if (s == NULL)
+	{
+		return (0);
+	}
 
 	while (*s != '\0')
 	{
@@ -43,5 +47,9 @@ int create_file(const char *filename, char *text_content)
 	}
 	test = write(f, text_content, size_stirng(text_content));
 	close(f);
-	return (test == len ? 1 : -1);
+	if (test != len)
+	{
+		return (-1);
+	}
+	return (1);
 }
