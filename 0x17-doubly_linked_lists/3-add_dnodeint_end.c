@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * add_dnodeint - add_dnodeint
+ * add_dnodeint_end - add_dnodeint_end
  * @head: h
  * @n: n
  * Return: p
@@ -14,13 +14,19 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	{
 		return (NULL);
 	}
+	new->n = n;
+	new->prev = NULL;
+	new->next = NULL;
+	if (h == NULL)
+	{
+		*head = new;
+		return (new);
+	}
 	while (h->next != NULL)
 	{
 		h = h->next;
 	}
-	new->n = n;
-	(*head)->prev = new;
-	new->next = NULL;
+	h->next = new;
 	new->prev = h;
 	return (new);
 }
