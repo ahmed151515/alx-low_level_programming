@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * insert_dnodeint_at_index - insert_dnodeint_at_index
- * @head: h
+ * @h: h
  * @n: n
  * @idx: idx
  * Return: p
@@ -22,7 +22,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	if (he == NULL)
 	{
 		free(new);
-		return (add_dnodeint(h, n)); 
+		return (add_dnodeint(h, n));
 	}
 	for (i = 0; i < idx; i++)
 	{
