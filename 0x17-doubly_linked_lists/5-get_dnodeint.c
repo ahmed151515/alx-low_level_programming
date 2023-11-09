@@ -2,6 +2,8 @@
 /**
  * get_dnodeint_at_index - get_dnodeint_at_index
  * @head: head
+ * @index: index
+ * Return: rr
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
