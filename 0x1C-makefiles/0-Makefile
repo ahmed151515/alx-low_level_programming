@@ -1,0 +1,7 @@
+CFLAG=-o
+
+all: school
+
+
+school: main.c school.c
+	gcc $^ $(CFLAG) $@
