@@ -1,18 +1,9 @@
 CFLAG=-c -o
 CC=gcc
 SRC= main.c school.c
-OBJ= main.o
+OBJ= $(SRC= .c=.o)
 NAME= school
 
 
-all: school
-
-
-school: main.o school.o
-	$(CC)  -o  school
-
-main.o: main.c
-	$(CC)  $(CFLAG) main.o  main.c
-
-school.o: school.c
-        $(CC)  $(CFLAG) school.o  school.o
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
