@@ -39,6 +39,7 @@ int search(int *array, size_t min, size_t max, int target)
 	{
 		return (search(array, 0, mid - 1, target));
 	}
+	return (0);
 }
 
 /**
